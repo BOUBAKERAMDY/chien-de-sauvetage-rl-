@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Résultats (lourds) : on garde l'arborescence, pas le contenu
+results/**/*
+!results/**/
+!results/**/.gitkeep
+
+# Suivi d'expériences
+wandb/
+runs/
+
+# Papiers (droits d'auteur)
+docs/papers/*.pdf
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/

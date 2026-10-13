@@ -1,0 +1,4 @@
+# Installation rapide : pip install -r requirements.txt
+playground
+jax<0.10
+pyyaml

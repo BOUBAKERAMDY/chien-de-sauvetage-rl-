@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rescue-dog"
+version = "0.1.0"
+description = "RL robuste pour un robot quadrupède (Go1) : randomisation de domaine + acteur-critique asymétrique"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "playground",       # MuJoCo Playground (inclut mujoco, mujoco-mjx, brax, jax)
+    "jax<0.10",         # brax 0.14.2 utilise jax.device_put_replicated, supprimé dans jax 0.10
+    "pyyaml",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

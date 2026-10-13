@@ -1,0 +1,4 @@
+# Configuration commune. Pour l'instant : seulement la simulation du chien.
+env:
+  name: Go1JoystickFlatTerrain   # tâche MuJoCo Playground (sol plat)
+  ctrl_dt: 0.02                  # pas de contrôle : 50 Hz
