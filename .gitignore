@@ -23,3 +23,6 @@ docs/papers/*.pdf
 .DS_Store
 .vscode/
 .idea/
+
+# Fichiers pour Claude Code (instructions, skills) : restent en local
+.claude/
